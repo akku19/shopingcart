@@ -1,6 +1,5 @@
 import Productlist from "./Components/Productlist";
 
-
 function App() {
   return (
     <>
@@ -24,11 +23,11 @@ function App() {
           <li className="nav-item active">
             <a className="nav-link" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" >Features</a>
+          <li className="nav-item">
+            <a href="#" className="nav-link" >Features</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Pricing</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">About</a>
