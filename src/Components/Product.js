@@ -26,7 +26,7 @@ const Product = (props) => {
         <div className="card-body px-2 pb-2 pt-1">
           <div className="d-flex justify-content-between">
             <div>
-              <p className="h4 text-primary">{props.products.price}</p>
+              <p className="h4 text-primary">${props.products.price}</p>
             </div>
             <div>
               <a href="/" className="text-secondary lead" data-toggle="tooltip" data-placement="left" title="Compare">
