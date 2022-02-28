@@ -68,7 +68,7 @@ const Product = (props) => {
           </div>
           <div className="d-flex justify-content-between">
             <div className="col px-0">
-              <button className="btn btn-outline-primary btn-block">
+              <button className="btn btn-outline-primary btn-block akash" onClick={()=>{props.addToCart(props.products)}} >
                 Add To Cart 
                 <i className="fa fa-shopping-basket" aria-hidden="true"></i>
               </button>

@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+ul.cart-items img {
+  width: 100px !important;
+}
+ul.cart-items li {
+  display: flex;
+}

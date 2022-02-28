@@ -37,7 +37,30 @@ const Filter = (props) => {
           <option value="higher">Higher</option>
         </select>  
       </div>
-      
+      <p>Cart Items {props.addToCart.length}</p>
+       <div className='row'>
+         <div className='col-md-6'>
+           <ul className='cart-items'>
+             {props.addToCart.map((item,index)=>{
+               {console.log(item)}
+              return <li key={index}>
+               <h2>{item.title}<br></br>
+                <span>{item.count} * {item.price}</span>
+               </h2>
+
+               <img src={item.image} alt='name' width="100px" />
+               <button onClick={()=>{props.removeCart(item._id)}}>Remove</button>
+             </li>
+               
+             })}
+            
+           </ul>
+           {(props.addToCart.length>0 ? <div className='total-price'>
+            <h3>total price :{props.addToCart.reduce((total, item)=>total+(item.price*item.count),0)}</h3>
+           </div>:'' )}
+           
+         </div>
+       </div>
     </div>
   </div>
   )
