@@ -13,8 +13,10 @@ const Productlist = () => {
          const CartItem = CartItems.slice();
          CartItem.forEach((item)=>{
            if(item._id==product._id){
+             
              console.log(`item id ${item._id} and proudtc id ${product._id} count ${product.count}`);
-             item.count++;
+            item.count++
+             //console.log(CartItems.indexOf(product._id));
              alreadCart = true;
            }
          })
